@@ -20,6 +20,7 @@ export const NewPage = () => {
         <th>Title</th>
         <th>Website</th>
       </tr>
+      {/* eslint-disable-next-line eqeqeq */}
       {data.map((item) => item.id == id && item.datas.map((a) => <tr className="card__item" key={a.id}>
           <td>{a.id}</td>
           <td><a target="_blank" rel="noreferrer" href={`${a.link}`}>{a.title}</a></td>

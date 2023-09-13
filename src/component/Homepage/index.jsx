@@ -23,6 +23,7 @@ const Homepage = () => {
 
     useEffect(() => {
         filterItems()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectField, searchField])
 
 
