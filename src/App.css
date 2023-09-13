@@ -299,6 +299,9 @@ a{
   .footer__content .header__logo{
     margin: 0;
   }
+  .customers__mobile{
+    display: none;
+  }
 }
 
 @media (max-width: 575px){

@@ -18,13 +18,13 @@ export const NewPage = () => {
       <tr>
         <th>No</th>
         <th>Title</th>
-        <th>Website</th>
+        <th className="customers__mobile">Website</th>
       </tr>
       {/* eslint-disable-next-line eqeqeq */}
       {data.map((item) => item.id == id && item.datas.map((a) => <tr className="card__item" key={a.id}>
           <td>{a.id}</td>
           <td><a target="_blank" rel="noreferrer" href={`${a.link}`}>{a.title}</a></td>
-          <td><a target="_blank" rel="noreferrer" href={`${a.link}`}>Link to website</a></td>
+          <td className="customers__mobile"><a target="_blank" rel="noreferrer" href={`${a.link}`}>{a.link}</a></td>
         </tr>))}
     </table>
     </div>
