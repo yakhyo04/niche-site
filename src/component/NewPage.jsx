@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../data/data";
-import "react-bubble-ui/dist/index.css";
 
 export const NewPage = () => {
   const { id } = useParams();
