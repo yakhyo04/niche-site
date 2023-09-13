@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import { data } from "../data/data";
 
@@ -7,6 +7,7 @@ export const NewPage = () => {
   return (
     <div className="container">
     <div>
+    {/*eslint-disable-next-line eqeqeq*/}
     {data.map((item) => item.id == id && <div className="card__content">
         <h1 className="card__title">Resources & Links for <span className="orange_gradient">{item.title}</span></h1>
         <h3 className="card__description" key={id}>{item.description}</h3>
