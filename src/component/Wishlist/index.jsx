@@ -35,7 +35,7 @@ const Wishlist = () => {
                     </Link>
                     <button className='wishlist__button' onClick={() => toggleWishlist(item)}>
                         {
-                            wishlist.some((wishedItem) => wishedItem.id === item.id) ? <img src={"/assets/heart-red.svg"} alt="wishlist" width={"20px"} /> : <img src={"/assets/heart.svg"} alt="wishlist" width={"20px"} />
+                            wishlist.some((wishedItem) => wishedItem.id === item.id) ? <img src={"/assets/heart-red.svg"} alt="wishlist-red" width={"20px"} /> : <img src={"/assets/heart.svg"} alt="wishlist-black" width={"20px"} />
                         }
                     </button>
                 </div>)
