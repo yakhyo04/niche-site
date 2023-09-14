@@ -38,12 +38,16 @@ a{
   text-align: center;
   color:darkblue;
 }
+.items{
+  width: 100%;
+}
 .item__wrapper{
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   justify-content: center;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   gap: 30px;
   flex-wrap: wrap;
 }

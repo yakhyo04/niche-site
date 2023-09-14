@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Datashow = ({filteredItems, wishlist, toggleWishlist}) => {
   return (
-    <div>
+    <div className='items'>
     <div className='item__wrapper'>
     {filteredItems.map((item) => (
         <div className='item' key={item.id}><Link className='item__box' to={"/pages/" + item.id}>
