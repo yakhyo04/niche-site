@@ -49,7 +49,7 @@ const Homepage = () => {
     <div className='homepage__wrapper container'>
         <h1 className='head_text'>
         Streamline access to essential <br className='max-md:hidden'/>
-          <span className='orange_gradient'> Resources and Links. </span>
+          <span className='orange_gradient'>Websites, Resources and Links. </span>
         </h1>
 
         <h2 className='desc'>

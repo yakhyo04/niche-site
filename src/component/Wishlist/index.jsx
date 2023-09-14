@@ -26,7 +26,7 @@ const Wishlist = () => {
             <h3 className="wishlist__title orange_gradient">Wishlist</h3>
             {
                 wishlist.length ? (
-                    <div className='item__wrapper'>
+                    <div className='item__wrapper wishlist__item--wrapper'>
             {
                 wishlist.map((item) => <div className="item" key={item.id}>
                     <Link className='item__box' to={"/pages/" + item.id}>
