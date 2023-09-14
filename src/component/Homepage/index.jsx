@@ -1,11 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import { data } from '../../data/data';
 import Datashow from '../Datashow';
+
+export const CountConxtext = createContext();
 
 const Homepage = () => {
     const [links, setLinks] = useState(data);
     const [searchField, setSearchField] = useState('');
     const [selectField, setSelectField] = useState('All');
+    const [wishlist, setWishlist] = useState(
+      JSON.parse(localStorage.getItem('wishlist')) || []
+    );
 
     function filterItems(){
         let filtered = data;
@@ -21,11 +26,24 @@ const Homepage = () => {
         setLinks(filtered);
     }
 
+    function toggleWishlist(item){
+      const itemIndex = wishlist.findIndex((wishedItem) => wishedItem.id === item.id);
+      let updatedWishlist;
+
+      if(itemIndex === -1){
+        updatedWishlist = [...wishlist, item]
+      }else{
+        updatedWishlist = [...wishlist];
+        updatedWishlist.splice(itemIndex, 1);
+      }
+      setWishlist(updatedWishlist);
+      localStorage.setItem('wishlist', JSON.stringify(updatedWishlist))
+    }
+
     useEffect(() => {
-        filterItems()
+      filterItems()
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectField, searchField])
-
 
   return (
     <div className='homepage__wrapper container'>
@@ -52,7 +70,7 @@ const Homepage = () => {
             </select>
         </div>
 
-        <Datashow filteredItems={links} />
+        <Datashow filteredItems={links} wishlist={wishlist} toggleWishlist={toggleWishlist} />
     </div>
   )
 }

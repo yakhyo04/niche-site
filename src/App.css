@@ -49,6 +49,7 @@ a{
 }
 .item{
   margin: 0;
+  position: relative;
 }
 .item__box{
   display: flex;
@@ -84,6 +85,7 @@ a{
 }
 .card__content{
   padding: 0 30px;
+  text-align: center;
 }
 .card__description{
   font-size: 22px;
@@ -117,6 +119,24 @@ a{
 #customers__wrapper{
   padding: 0 30px;
 }
+.wishlist__title{
+  text-align: center;
+  font-size: 32px;
+}
+.wishlist__button{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.wishlist__content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .header__logo{
   font-size: 40px;
@@ -126,6 +146,11 @@ a{
   -webkit-background-clip: text; /* Equivalent to bg-clip-text (for webkit-based browsers) */
   background-clip: text; /* Equivalent to bg-clip-text */
   color: transparent; /* Equivalent to text-transparent */
+}
+.header__right{
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .head_text {

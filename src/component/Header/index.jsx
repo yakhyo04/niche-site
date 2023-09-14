@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -7,7 +6,12 @@ const Header = () => {
         <nav className='navbar'>
           <Link className='header__logo' to={"/"}>Logo</Link>
 
+          <div className='header__right'>
+          <Link to={"/wishlist"}>
+            <img src={"/assets/heart.svg"} alt="wishlist" width={"20px"} />
+          </Link>
           <button type='button' onClick={() => window.open('https://github.com/yakhyo04')} className='black_btn'>GitHub</button>
+          </div>
         </nav>
     </header>
   )

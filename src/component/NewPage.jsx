@@ -9,7 +9,7 @@ export const NewPage = () => {
     <div>
     {/*eslint-disable-next-line eqeqeq*/}
     {data.map((item) => item.id == id && <div className="card__content">
-        <h1 className="card__title">Resources & Links for <span className="orange_gradient">{item.title}</span></h1>
+        <h1 className="card__title">Best Websites for <span className="orange_gradient">{item.title}</span></h1>
         <h3 className="card__description" key={id}>{item.description}</h3>
       </div>)}
     </div>
