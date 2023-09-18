@@ -144,9 +144,9 @@ a{
   justify-content: center;
   flex-direction: column;
 }
-.wishlist__item--wrapper{
+/* .wishlist__item--wrapper{
   margin: 20px 0;
-}
+} */
 
 .header__logo{
   font-size: 40px;
@@ -401,6 +401,9 @@ a{
   .item__wrapper{
     grid-template-columns: repeat(2, 1fr);
   }
+  .main h1{
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 400px){
@@ -409,8 +412,5 @@ a{
   }
   .main__link{
     padding: 1em 2em;
-  }
-  .main h1{
-    font-size: 30px;
   }
 }
