@@ -1,8 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { data } from '../../data/data';
 import Datashow from '../Datashow';
-import { useContext } from 'react';
-import { LevelContext } from '../../context/LevelContext';
+// import { useContext } from 'react';
+// import { LevelContext } from '../../context/LevelContext';
 export const CountConxtext = createContext();
 
 const Homepage = () => {
@@ -13,7 +13,7 @@ const Homepage = () => {
       JSON.parse(localStorage.getItem('wishlist')) || []
     );
 
-    const level = useContext(LevelContext);
+    // const level = useContext(LevelContext);
 
     function filterItems(){
         let filtered = data;
