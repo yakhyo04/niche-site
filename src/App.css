@@ -42,7 +42,8 @@ a{
   width: 100%;
 }
 .item__wrapper{
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
@@ -399,7 +400,6 @@ a{
 @media (max-width: 575px){
   .item__wrapper{
     grid-template-columns: repeat(2, 1fr);
-    padding: 30px !important;
   }
 }
 
