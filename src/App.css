@@ -144,9 +144,9 @@ a{
   justify-content: center;
   flex-direction: column;
 }
-/* .wishlist__item--wrapper{
-  margin: 20px 0;
-} */
+.wishlist__item--wrapper{
+  padding: 40px 0 !important;
+}
 
 .header__logo{
   font-size: 40px;
