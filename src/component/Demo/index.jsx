@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 
-import { copy, linkIcon, loader, tick } from '../../images';
+import { linkIcon, loader } from '../../images';
 import { useLazyGetSummaryQuery } from '../../services/article';
+import copy from '../../images/copy.svg'
+import tick from '../../images/tick.svg'
 
 const Demo = () => {
   const [article, setArticle] = useState({
