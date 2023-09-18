@@ -6,6 +6,7 @@ import Homepage from "./component/Homepage";
 import Footer from "./component/Footer";
 import Wishlist from "./component/Wishlist";
 import Main from "./component/Main";
+import CommingSoon from "./component/CommingSoon";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/pages/links" element={<Homepage/>} />
         <Route path="/wishlist" element={<Wishlist/>} />
         <Route path="/pages/:id" element={<NewPage />} />
+        <Route path="/pages/comming-soon" element={<CommingSoon/>} />
       </Routes>
       <Footer/>
     </div>

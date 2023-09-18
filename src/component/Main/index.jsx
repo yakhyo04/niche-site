@@ -6,7 +6,7 @@ import ljhooker from './../../images/ljhooker.avif';
 const Main = () => {
   return (
     <div className='main'>
-        <Link to={"/pages/something"} className='main__span'>🔥 New: New thing is coming...</Link>
+        <Link to={"/pages/comming-soon"} className='main__span'>🔥 New: New thing is coming...</Link>
         <h1 className='head_text'>
         Streamline access to essential <br className='max-md:hidden'/>
         <span className='orange_gradient'>Websites, Resources and Links. </span>

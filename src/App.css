@@ -162,6 +162,9 @@ a{
   gap: 20px;
   align-items: center;
 }
+.header__wishlist{
+  margin-top: 5px;
+}
 
 .head_text {
   margin: 0; /* Equivalent to mt-5 */
@@ -403,6 +406,9 @@ a{
   }
   .main h1{
     font-size: 30px;
+  }
+  .header__right{
+    gap: 10px;
   }
 }
 

@@ -7,7 +7,7 @@ const Header = () => {
           <Link className='header__logo' to={"/"}>Websites</Link>
 
           <div className='header__right'>
-          <Link to={"/wishlist"}>
+          <Link to={"/wishlist"} className='header__wishlist'>
             <img src={"/assets/heart.svg"} alt="wishlist-icon" width={"20px"} />
           </Link>
           <a href='/pages/links' type='button' className='black_btn'>Get Started</a>
