@@ -7,7 +7,7 @@ import yaco from './../../images/yaco.png';
 const Main = () => {
   return (
     <div className='main'>
-        <Link to={"https://ai-summarizer-site.netlify.app/"} className='main__span'>🔥 New: AI Summarizer...</Link>
+        <Link to={"https://ai-summarize.netlify.app/"} className='main__span'>🔥 New: AI Summarizer...</Link>
         <h1 className='head_text'>
         Streamline access to essential <br className='max-md:hidden'/>
         <span className='orange_gradient'>Websites, Resources and Links. </span>
