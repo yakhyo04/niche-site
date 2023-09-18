@@ -10,7 +10,7 @@ const Header = () => {
           <Link to={"/wishlist"}>
             <img src={"/assets/heart.svg"} alt="wishlist-icon" width={"20px"} />
           </Link>
-          <button type='button' onClick={() => window.open('https://github.com/yakhyo04')} className='black_btn'>GitHub</button>
+          <a href='/pages/links' type='button' className='black_btn'>Get Started</a>
           </div>
         </nav>
     </header>
@@ -18,3 +18,4 @@ const Header = () => {
 }
 
 export default Header
+// onClick={() => window.open('https://github.com/yakhyo04')}

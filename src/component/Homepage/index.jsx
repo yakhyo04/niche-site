@@ -1,7 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { data } from '../../data/data';
 import Datashow from '../Datashow';
-
+import { useContext } from 'react';
+import { LevelContext } from '../../context/LevelContext';
 export const CountConxtext = createContext();
 
 const Homepage = () => {
@@ -11,6 +12,8 @@ const Homepage = () => {
     const [wishlist, setWishlist] = useState(
       JSON.parse(localStorage.getItem('wishlist')) || []
     );
+
+    const level = useContext(LevelContext);
 
     function filterItems(){
         let filtered = data;
@@ -47,14 +50,6 @@ const Homepage = () => {
 
   return (
     <div className='homepage__wrapper container'>
-        <h1 className='head_text'>
-        Streamline access to essential <br className='max-md:hidden'/>
-          <span className='orange_gradient'>Websites, Resources and Links. </span>
-        </h1>
-
-        <h2 className='desc'>
-        Discover a convenient one-stop destination for all your resources and links.
-        </h2>
 
         <div class="search__wrapper">
             <input onChange={(e) => setSearchField(e.target.value)} className='homepage__search' type='text' placeholder='Search' />

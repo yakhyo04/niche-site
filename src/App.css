@@ -208,18 +208,19 @@ a{
 
 .black_btn {
   border-radius: 9999px; /* Equivalent to rounded-full */
-  border: 1px solid #000; /* Equivalent to border border-black */
-  background-color: #000; /* Equivalent to bg-black */
+  border: 1px solid #37667e; /* Equivalent to border border-black */
+  background-color: #fff; /* Equivalent to bg-black */
   padding: 0.375rem 1.25rem; /* Equivalent to py-1.5 px-5 */
   font-size: 0.875rem; /* Equivalent to text-sm */
-  color: #fff; /* Equivalent to text-white */
+  color: #37667e; /* Equivalent to text-white */
   transition: all 0.3s; /* Equivalent to transition-all */
   margin-right: 30px;
+  font-weight: 500;
 }
 
 .black_btn:hover {
-  background-color: #fff; /* Equivalent to hover:bg-white */
-  color: #000; /* Equivalent to hover:text-black */
+  background-color: #37667e; /* Equivalent to hover:bg-white */
+  color: #fff; /* Equivalent to hover:text-black */
 }
 .homepage__wrapper{
   display: flex;
@@ -286,6 +287,62 @@ a{
   color: #fff;
 }
 
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main h1{
+  font-size: 51px;
+}
+.main__link{
+  background: #37667e;
+  border: 1px solid #37667e;
+  color: #fff;
+  padding: 1.4em 2.7em;
+  border-radius: 37px;
+  font-weight: 500;
+  transition: all .2s linear;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 1!important;
+  position: relative;
+  margin: 20px 0;
+}
+.main .desc{
+  padding-bottom: 0;
+}
+.main__span{
+  background: #faf785;
+  border: 1px solid #1d2d35;
+  border-radius: 23px;
+  display: inline-block;
+  font-weight: 500;
+  padding: 3px 15px;
+  text-decoration: none;
+  margin: 20px 0;
+}
+.main__span:hover{
+  background: #dfda5d;
+}
+.main__description{
+  color: #1d2d35;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+.main__images{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.main__image{
+  width: 110px;
+  filter: grayscale(1) contrast(2) brightness(1);
+}
+
 @media (max-width: 1000px){
   .item__wrapper{
     grid-template-columns: repeat(4, 1fr); 
@@ -346,5 +403,8 @@ a{
 @media (max-width: 400px){
   .item__wrapper{
     grid-template-columns: 1fr;
+  }
+  .main__link{
+    padding: 1em 2em;
   }
 }

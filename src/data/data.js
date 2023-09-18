@@ -2,7 +2,7 @@ export const data = [
     {
         "id": 1,
         "title": "HTML",
-        "img": "./assets/html.png",
+        "img": "/assets/html.png",
         "category": "frontend",
         "description":"HTML (Hypertext Markup Language) is a standard markup language used for creating and structuring the content of web pages.",
         "datas": [
@@ -61,7 +61,7 @@ export const data = [
     {
         "id": 2,
         "title": "CSS",
-        "img": "./assets/css.png",
+        "img": "/assets/css.png",
         "category": "frontend",
         "description": "CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation and visual styling of HTML or XML documents, including aspects like layout, colors, fonts, and spacing, to enhance the appearance and design of web pages.",
         "datas": [
@@ -125,7 +125,7 @@ export const data = [
     {
         "id": 3,
         "title": "JavaScript",
-        "img": "./assets/javascript.png",
+        "img": "/assets/javascript.png",
         "category": "frontend",
         "description": "JavaScript is a versatile programming language used to create interactive and dynamic content on websites and web applications.",
         "datas": [
@@ -189,7 +189,7 @@ export const data = [
     {
         "id": 4,
         "title": "React",
-        "img": "./assets/react.png",
+        "img": "/assets/react.png",
         "category": "frontend",
         "description": "React is an open-source JavaScript library for building user interfaces that facilitates the creation of reusable UI components and efficient management of application state in web development.",
         "datas": [
@@ -253,7 +253,7 @@ export const data = [
     {
         "id": 5,
         "title": "Vue.js",
-        "img": "./assets/vue.png",
+        "img": "/assets/vue.png",
         "category": "frontend",
         "description": "Vue.js is a progressive JavaScript framework for building user interfaces.",
         "datas": [
@@ -312,7 +312,7 @@ export const data = [
     {
         "id": 6,
         "title": "Angular",
-        "img": "./assets/angular.png",
+        "img": "/assets/angular.png",
         "category": "frontend",
         "description": "Angular is a platform for building dynamic web applications.",
         "datas": [
@@ -371,7 +371,7 @@ export const data = [
     {
         "id": 7,
         "title": "Node.js",
-        "img": "./assets/node.png",
+        "img": "/assets/node.png",
         "category": "backend",
         "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
         "datas": [
@@ -430,7 +430,7 @@ export const data = [
     {
         "id": 8,
         "title": "Nest.js",
-        "img": "./assets/nest.png",
+        "img": "/assets/nest.png",
         "category": "backend",
         "description": "Nest is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications.",
         "datas": [
@@ -489,7 +489,7 @@ export const data = [
     {
         "id": 9,
         "title": "Express.js",
-        "img": "./assets/express.png",
+        "img": "/assets/express.png",
         "category": "backend",
         "description": "Express.js is a web application framework for Node.js.",
         "datas": [
@@ -548,7 +548,7 @@ export const data = [
     {
         "id": 10,
         "title": "PostgreSQL",
-        "img": "./assets/postgresql.png",
+        "img": "/assets/postgresql.png",
         "category": "backend",
         "description": "PostgreSQL is a powerful, open-source relational database management system (RDBMS).",
         "datas": [
@@ -602,7 +602,7 @@ export const data = [
     {
         "id": 11,
         "title": "SQL (Structured Query Language)",
-        "img": "./assets/sql.png",
+        "img": "/assets/sql.png",
         "category": "backend",
         "description": "SQL is a standardized language for managing and querying relational databases.",
         "datas": [
@@ -656,7 +656,7 @@ export const data = [
     {
         "id": 12,
         "title": "Python",
-        "img": "./assets/python.png",
+        "img": "/assets/python.png",
         "category": "backend",
         "description": "Python is a versatile, high-level programming language known for its simplicity and readability.",
         "datas": [
@@ -715,7 +715,7 @@ export const data = [
     {
         "id": 13,
         "title": "Java",
-        "img": "./assets/java.png",
+        "img": "/assets/java.png",
         "category": "backend",
         "description": "Java is a popular, high-level programming language known for its platform independence and wide range of applications.",
         "datas": [
@@ -774,7 +774,7 @@ export const data = [
     {
         "id": 14,
         "title": "PHP",
-        "img": "./assets/php.png",
+        "img": "/assets/php.png",
         "category": "backend",
         "description": "PHP is a widely-used server-side scripting language for web development.",
         "datas": [
@@ -833,7 +833,7 @@ export const data = [
     {
         "id": 15,
         "title": "C Programming",
-        "img": "./assets/c.png",
+        "img": "/assets/c.png",
         "category": "backend",
         "description": "C is a general-purpose programming language known for its simplicity and efficiency.",
         "datas": [
@@ -892,7 +892,7 @@ export const data = [
     {
         "id": 16,
         "title": "C++ Programming",
-        "img": "./assets/c++.png",
+        "img": "/assets/c++.png",
         "category": "backend",
         "description": "C++ is a general-purpose programming language known for its power and flexibility.",
         "datas": [
@@ -951,7 +951,7 @@ export const data = [
     {
         "id": 17,
         "title": "C# Programming",
-        "img": "./assets/csharp.png",
+        "img": "/assets/csharp.png",
         "category": "backend",
         "description": "C# is a versatile programming language developed by Microsoft for a wide range of applications.",
         "datas": [
@@ -1010,7 +1010,7 @@ export const data = [
     {
         "id": 18,
         "title": "MySQL",
-        "img": "./assets/mysql.png",
+        "img": "/assets/mysql.png",
         "category": "backend",
         "description": "MySQL is an open-source relational database management system (RDBMS) known for its speed and reliability.",
         "datas": [
@@ -1069,7 +1069,7 @@ export const data = [
     {
         "id": 19,
         "title": "jQuery",
-        "img": "./assets/jquery.png",
+        "img": "/assets/jquery.png",
         "category": "frontend",
         "description": "jQuery is a JavaScript library that simplifies HTML document traversal and manipulation, event handling, and animation.",
         "datas": [
@@ -1128,7 +1128,7 @@ export const data = [
     {
         "id": 20,
         "title": "Django",
-        "img": "./assets/django.png",
+        "img": "/assets/django.png",
         "category": "backend",
         "description": "Django is a high-level Python web framework known for its simplicity, scalability, and rapid development capabilities.",
         "datas": [
@@ -1187,7 +1187,7 @@ export const data = [
     {
         "id": 21,
         "title": "R Programming",
-        "img": "./assets/r.png",
+        "img": "/assets/r.png",
         "category": "backend",
         "description": "R is a language and environment for statistical computing and graphics, widely used for data analysis and visualization.",
         "datas": [
@@ -1246,7 +1246,7 @@ export const data = [
     {
         "id": 22,
         "title": "TypeScript",
-        "img": "./assets/typescript.png",
+        "img": "/assets/typescript.png",
         "category": "frontend",
         "description": "TypeScript is a statically typed superset of JavaScript that enhances code quality and maintainability.",
         "datas": [
@@ -1305,7 +1305,7 @@ export const data = [
     {
         "id": 23,
         "title": "Git",
-        "img": "./assets/git.png",
+        "img": "/assets/git.png",
         "category": "version-control",
         "description": "Git is a distributed version control system that allows you to track changes in code and collaborate with others.",
         "datas": [
@@ -1364,7 +1364,7 @@ export const data = [
     {
         "id": 24,
         "title": "MongoDB",
-        "img": "./assets/mongodb.png",
+        "img": "/assets/mongodb.png",
         "category": "backend",
         "description": "MongoDB is a NoSQL database known for its flexibility and scalability in handling large volumes of unstructured data.",
         "datas": [
@@ -1423,7 +1423,7 @@ export const data = [
     {
         "id": 25,
         "title": "ASP.NET",
-        "img": "./assets/asp-net.png",
+        "img": "/assets/asp-net.png",
         "category": "backend",
         "description": "ASP.NET is a framework for building web applications developed by Microsoft. It offers multiple approaches, including Web Forms and ASP.NET Core.",
         "datas": [
@@ -1482,7 +1482,7 @@ export const data = [
     {
         "id": 26,
         "title": "Amazon Web Services (AWS)",
-        "img": "./assets/aws.png",
+        "img": "/assets/aws.png",
         "category": "backend",
         "description": "AWS is a comprehensive and widely used cloud computing platform offering a wide range of services for various purposes.",
         "datas": [
@@ -1541,7 +1541,7 @@ export const data = [
     {
         "id": 27,
         "title": "Go (Golang)",
-        "img": "./assets/go.png",
+        "img": "/assets/go.png",
         "category": "backend",
         "description": "Go is a statically typed, compiled programming language designed for simplicity, efficiency, and scalability.",
         "datas": [
@@ -1600,7 +1600,7 @@ export const data = [
     {
         "id": 28,
         "title": "Kotlin",
-        "img": "./assets/kotlin.png",
+        "img": "/assets/kotlin.png",
         "category": "mobile",
         "description": "Kotlin is a statically typed programming language known for its concise syntax and seamless interoperability with Java.",
         "datas": [
@@ -1659,7 +1659,7 @@ export const data = [
     {
         "id": 29,
         "title": "Data Science",
-        "img": "./assets/data-science.png",
+        "img": "/assets/data-science.png",
         "category": "data science",
         "description": "Data Science is a multidisciplinary field that involves data analysis, machine learning, statistics, and domain knowledge to extract insights from data.",
         "datas": [
@@ -1718,7 +1718,7 @@ export const data = [
     {
         "id": 30,
         "title": "Swift Programming",
-        "img": "./assets/swift.png",
+        "img": "/assets/swift.png",
         "category": "mobile",
         "description": "Swift is a programming language developed by Apple for building iOS, macOS, watchOS, and tvOS applications.",
         "datas": [
