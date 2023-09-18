@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import anytime from './../../images/anytime.avif';
 import ljhooker from './../../images/ljhooker.avif';
-import mantra from './../../images/mantra.avif';
 
 const Main = () => {
   return (
