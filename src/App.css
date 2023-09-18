@@ -415,6 +415,10 @@ a{
   }
   .header__logo{
     margin-left: 15px;
+    font-size: 30px;
+  }
+  .main__link{
+    font-size: 14px;
   }
 }
 
