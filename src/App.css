@@ -410,6 +410,12 @@ a{
   .header__right{
     gap: 10px;
   }
+  .black_btn{
+    margin-right: 15px;
+  }
+  .header__logo{
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 400px){
