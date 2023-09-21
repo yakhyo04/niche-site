@@ -42,7 +42,7 @@ const Wishlist = () => {
             }
             </div>
                 ) : (
-                    <Link to={"/"} className='desc'>Add Items to your wishlist</Link>
+                    <Link to={"/pages/links"} className='desc'>Add Items to your wishlist</Link>
                 )
             }
             </div>

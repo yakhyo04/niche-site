@@ -1,6 +1,17 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useUserAuth } from '../../context/UserAuthContext'
 
 const Header = () => {
+  const {logOut, user} = useUserAuth();
+  const navigate = useNavigate();
+  const handleLogout = async() => {
+    try{
+      await logOut();
+      navigate("/login");
+    }catch(err){
+      console.log(err.message);
+    }
+  }
   return (
     <header className='header container'>
         <nav className='navbar'>
@@ -10,7 +21,9 @@ const Header = () => {
           <Link to={"/wishlist"} className='header__wishlist'>
             <img src={"/assets/heart.svg"} alt="wishlist-icon" width={"20px"} />
           </Link>
-          <a href='/pages/links' type='button' className='black_btn'>Get Started</a>
+          {
+            user ? <button className='black_btn' variant="primary" onClick={handleLogout}>Logout</button> : <a href='/pages/links' type='button' className='black_btn'>Get Started</a>
+          }
           </div>
         </nav>
     </header>

@@ -7,18 +7,34 @@ import Footer from "./component/Footer";
 import Wishlist from "./component/Wishlist";
 import Main from "./component/Main";
 import CommingSoon from "./component/CommingSoon";
+import Login from "./page/Login";
+import Signup from "./page/Signup";
+import Home from "./page/Home";
+import ProtectedRoute from "./page/ProtectedRoute";
+import { UserAuthContextProvider } from "./context/UserAuthContext";
 
 function App() {
   return (
     <div>
       <Header/>
+      <UserAuthContextProvider>
       <Routes>
         <Route path="/" element={<Main/>} />
-        <Route path="/pages/links" element={<Homepage/>} />
-        <Route path="/wishlist" element={<Wishlist/>} />
+        <Route path="/wishlist" element={<ProtectedRoute><Wishlist/></ProtectedRoute>} />
         <Route path="/pages/:id" element={<NewPage />} />
         <Route path="/pages/comming-soon" element={<CommingSoon/>} />
+        <Route 
+          path="/pages/links" 
+          element={
+            <ProtectedRoute>
+              <Homepage/>
+            </ProtectedRoute>
+          } 
+        />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
       </Routes>
+      </UserAuthContextProvider>
       <Footer/>
     </div>
   );

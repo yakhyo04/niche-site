@@ -2,7 +2,11 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #E4F1FF;
+  background-color: #E4F1FF !important;
+}
+a{
+  text-decoration: none !important;
+  color: #000 !important;
 }
 .container{
   width: 1240px !important;
@@ -42,7 +46,7 @@ a{
   width: 100%;
 }
 .item__wrapper{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -66,7 +70,7 @@ a{
   font-weight: 500;
   background-color: #fff;
   padding: 20px;
-  height: 180px;
+  height: 200px;
   text-align: center;
   border-radius: 20px;
   border: 1px solid transparent;
@@ -153,19 +157,19 @@ a{
   font-size: 40px;
   margin-left: 30px;
   font-weight: 900; /* Equivalent to font-black */
-  background-image: linear-gradient(to right, #3182CE, #34D399); /* Equivalent to bg-gradient-to-r from-blue-600 to-cyan-600 */
+  background-image: linear-gradient(to right, #3182CE, #34D399) !important; /* Equivalent to bg-gradient-to-r from-blue-600 to-cyan-600 */
   -webkit-background-clip: text; /* Equivalent to bg-clip-text (for webkit-based browsers) */
   background-clip: text; /* Equivalent to bg-clip-text */
-  color: transparent; /* Equivalent to text-transparent */
+  color: transparent !important; /* Equivalent to text-transparent */
 }
 .header__right{
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.header__wishlist{
+/* .header__wishlist{
   margin-top: 5px;
-}
+} */
 
 .head_text {
   margin: 0; /* Equivalent to mt-5 */
@@ -283,7 +287,7 @@ a{
   max-width: 36rem; /* Equivalent to max-w-2xl */
   margin: 0 auto;
   padding: 20px 0 30px 0;
-  color: #fff;
+  color: #fff !important;
 }
 .footer__bottom{
   margin-left: 30px;
@@ -291,7 +295,7 @@ a{
   color: #fff;
 }
 .footer__logo{
-  color: #fff;
+  color: #fff !important;
 }
 
 .main{
@@ -306,7 +310,7 @@ a{
 .main__link{
   background: #37667e;
   border: 1px solid #37667e;
-  color: #fff;
+  color: #fff !important;
   padding: 1.4em 2.7em;
   border-radius: 37px;
   font-weight: 500;
@@ -359,7 +363,7 @@ a{
   .search__wrapper{
     width: auto;
     flex-wrap: wrap;
-    padding: 0 30px;
+    /* padding: 0 30px; */
   }
 }
 
