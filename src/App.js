@@ -9,7 +9,6 @@ import Main from "./component/Main";
 import CommingSoon from "./component/CommingSoon";
 import Login from "./page/Login";
 import Signup from "./page/Signup";
-import Home from "./page/Home";
 import ProtectedRoute from "./page/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 
