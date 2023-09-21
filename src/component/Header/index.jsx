@@ -22,7 +22,7 @@ const Header = () => {
             <img src={"/assets/heart.svg"} alt="wishlist-icon" width={"20px"} />
           </Link>
           {
-            user ? <button className='black_btn' variant="primary" onClick={handleLogout}>Logout</button> : <a href='/pages/links' type='button' className='black_btn'>Get Started</a>
+            user ? <button className='black_btn' variant="primary" onClick={handleLogout}>Logout</button> : <Link to={'/pages/links'} className='black_btn'>Get Started</Link>
           }
           </div>
         </nav>
