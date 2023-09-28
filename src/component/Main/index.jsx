@@ -4,6 +4,7 @@ import anytime from './../../images/anytime.avif';
 import ljhooker from './../../images/ljhooker.avif';
 import yaco from './../../images/yaco.png';
 import ReviewSection from '../Review-Section';
+import bestsites from './../../images/bestsites.png';
 
 const Main = () => {
   return (
@@ -27,6 +28,10 @@ const Main = () => {
             <img className='main__image' src={anytime} alt="anytime" />
             <img className='main__image' src={yaco} alt="yaco" />
             <img className='main__image' src={ljhooker} alt="ljhooker" />
+        </div>
+
+        <div className='main__image--wrapper'>
+          <img src={bestsites} alt="Best sites" />
         </div>
 
         <ReviewSection/>
