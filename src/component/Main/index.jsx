@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import anytime from './../../images/anytime.avif';
 import ljhooker from './../../images/ljhooker.avif';
 import yaco from './../../images/yaco.png';
+import ReviewSection from '../Review-Section';
 
 const Main = () => {
   return (
@@ -27,6 +28,8 @@ const Main = () => {
             <img className='main__image' src={yaco} alt="yaco" />
             <img className='main__image' src={ljhooker} alt="ljhooker" />
         </div>
+
+        <ReviewSection/>
     </div>
   )
 }
