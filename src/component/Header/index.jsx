@@ -13,8 +13,8 @@ const Header = () => {
     }
   }
   return (
-    <header className='header container'>
-        <nav className='navbar'>
+    <header className='header'>
+        <nav className='container navbar'>
           <Link className='header__logo' to={"/"}>Websites</Link>
 
           <div className='header__right'>

@@ -11,10 +11,12 @@ import Login from "./page/Login";
 import Signup from "./page/Signup";
 import ProtectedRoute from "./page/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
+import Announcement from "./component/Announcement";
 
 function App() {
   return (
     <div>
+      <Announcement/>
       <Header/>
       <UserAuthContextProvider>
       <Routes>
