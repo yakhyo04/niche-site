@@ -333,6 +333,7 @@ a{
   padding: 3px 15px;
   text-decoration: none;
   margin: 20px 0;
+  margin-top: 55px;
 }
 .main__span:hover{
   background: #dfda5d;
@@ -350,6 +351,7 @@ a{
   padding: 20px 0 30px 0;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .main__image{
   width: 110px;
