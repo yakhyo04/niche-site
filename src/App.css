@@ -87,6 +87,9 @@ a{
   flex-wrap: wrap;
   padding: 50px 20px;
 }
+.card__title{
+  padding-top: 30px;
+}
 .card__link{
   background-color: aqua;
   padding: 10px 20px;
