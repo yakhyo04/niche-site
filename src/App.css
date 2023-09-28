@@ -226,6 +226,7 @@ a{
   align-items: center; /* Equivalent to flex items-center */
   width: 100%; /* Equivalent to w-full */
   margin-bottom: 0; /* Equivalent to mb-10 */
+  padding: 0 10px !important;
   padding-top: 0.75rem; /* Equivalent to pt-3 */
 }
 
