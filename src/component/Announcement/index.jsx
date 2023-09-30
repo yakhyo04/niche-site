@@ -6,7 +6,7 @@ const Announcement = () => {
         <div className='container'>
             <div className='announcement__wrapper'>
                 <div className='announcement__item'>
-                    <p className='announcement__text'>Lorem ipsum dolor set amet</p>
+                    <p className='announcement__text'>Welcome to our website!</p>
                 </div>
             </div>
         </div>
