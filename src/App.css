@@ -218,8 +218,8 @@ a{
   justify-content: center; /* Equivalent to flex justify-center */
   align-items: center; /* Equivalent to flex items-center */
   flex-direction: column; /* Equivalent to flex flex-col */
-  background-color: #fff;
-  border-bottom: 1px solid #000;
+  /* background-color: #fff;
+  border-bottom: 1px solid #000; */
   /* width: 100%; */
 }
 
