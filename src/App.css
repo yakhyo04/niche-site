@@ -243,6 +243,7 @@ a{
   transition: all 0.3s; /* Equivalent to transition-all */
   /* margin-right: 30px; */
   font-weight: 500;
+  margin: 20px 0;
 }
 
 .black_btn:hover {
@@ -382,6 +383,7 @@ a{
   justify-content: center;
   flex-direction: column;
   margin: 0 auto 50px auto;
+  opacity: .5;
 }
 
 .review-section{
@@ -415,6 +417,41 @@ a{
 .review-section__image{
   border-radius: 50%;
   margin: 18px 0;
+}
+
+.post{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.post__input{
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.post__button{
+  width: 100%;
+}
+
+.auth__wrapper{
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 @media (max-width: 1000px){

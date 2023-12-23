@@ -54,7 +54,7 @@ const Login = () => {
 
   return (
     <div className="container">
-      <div className="p-4 box box-container">
+      <div className="p-4 box box-container auth__wrapper">
         <h2 className="mb-3">Login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
@@ -89,7 +89,7 @@ const Login = () => {
           />
         </div>
       </div>
-      <div className="p-4 box mt-3 text-center box-container">
+      <div className="p-4 box text-center box-container">
         Don't have an account? <Link to="/signup">Sign up</Link>
       </div>
     </div>

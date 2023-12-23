@@ -5,8 +5,10 @@ import ljhooker from './../../images/ljhooker.avif';
 import yaco from './../../images/yaco.png';
 import ReviewSection from '../Review-Section';
 import bestsites from './../../images/bestsites.png';
+import { useUserAuth } from '../../context/UserAuthContext';
 
 const Main = () => {
+  const { logOut, user } = useUserAuth();
   return (
     <div className='main'>
         <Link to={"https://ai-summarize.netlify.app/"} className='main__span'>🔥 New: AI Summarizer...</Link>
@@ -19,7 +21,9 @@ const Main = () => {
         Discover a convenient one-stop destination for all your resources and links.
         </h2>
 
-        <Link to={"/pages/links"} className='main__link'>Get started for free</Link>
+        {
+          user ? <Link to={"/pages/links"} className='main__link'>Get all websites links</Link> : <Link to={"/pages/links"} className='main__link'>Get started for free</Link>
+        }
 
         <p className='main__description'>
         Trusted daily by growing brands and agencies around the world including:

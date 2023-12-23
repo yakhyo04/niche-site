@@ -12,6 +12,7 @@ import Signup from "./page/Signup";
 import ProtectedRoute from "./page/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Announcement from "./component/Announcement";
+import Home from "./page/Home";
 
 function App() {
   return (
@@ -22,7 +23,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Main/>} />
         <Route path="/wishlist" element={<ProtectedRoute><Wishlist/></ProtectedRoute>} />
-        <Route path="/pages/:id" element={<NewPage />} />
+        <Route path="/pages/:id" element={
+          <ProtectedRoute>
+            <NewPage />
+          </ProtectedRoute>
+        } />
         <Route path="/pages/comming-soon" element={<CommingSoon/>} />
         <Route 
           path="/pages/links" 
@@ -34,6 +39,11 @@ function App() {
         />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
+        <Route path="/profile" element={
+          <ProtectedRoute>
+            <Home/>
+          </ProtectedRoute>
+        } />
       </Routes>
       </UserAuthContextProvider>
       <Footer/>
