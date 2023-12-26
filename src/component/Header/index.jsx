@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useUserAuth } from '../../context/UserAuthContext';
 
 const Header = () => {
-  const {logOut, user} = useUserAuth();
+  const {user} = useUserAuth();
   return (
     <header className='header'>
         <nav className='container navbar'>

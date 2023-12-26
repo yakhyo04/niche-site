@@ -1,10 +1,10 @@
 import React from 'react';
 import { useUserAuth } from '../context/UserAuthContext';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Post from '../component/Post/post.component';
 
 const Home = () => {
-    const {logOut, user} = useUserAuth();
+    const {logOut} = useUserAuth();
     const navigate = useNavigate();
 
     const handleLogout = async() => {

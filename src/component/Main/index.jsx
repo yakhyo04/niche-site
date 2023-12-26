@@ -8,7 +8,7 @@ import bestsites from './../../images/bestsites.png';
 import { useUserAuth } from '../../context/UserAuthContext';
 
 const Main = () => {
-  const { logOut, user } = useUserAuth();
+  const { user } = useUserAuth();
   return (
     <div className='main'>
         <Link to={"https://ai-summarize.netlify.app/"} className='main__span'>🔥 New: AI Summarizer...</Link>
