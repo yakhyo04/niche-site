@@ -13,6 +13,7 @@ import ProtectedRoute from "./page/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Announcement from "./component/Announcement";
 import Home from "./page/Home";
+import GetData from "./page/GetData";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
+        <Route path="/getdata" element={<GetData/>} />
         <Route path="/profile" element={
           <ProtectedRoute>
             <Home/>
